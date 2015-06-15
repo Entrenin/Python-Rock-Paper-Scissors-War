@@ -7,11 +7,5 @@ p = "paper"
 s = "scissors"
 player1 = raw_input('Player 1 please input your choice: ')
 player2 = raw_input('Player 2 please input your choice: ')
-class Checkinput:
-    x = False
-    def __init__(test):
-        if test.lower() == r | test.lower() == p | test.lower() == s:
-            return True
-        #if x == False:
-        #    print "Exception: Invalid input string", test 
-Checkinput(player1)
+x = False
+if player1.lower() == r or player1.lower() == p or player1.lower() == s:
