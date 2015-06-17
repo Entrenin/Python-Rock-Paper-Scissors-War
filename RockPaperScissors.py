@@ -3,13 +3,14 @@ r = "rock"
 p = "paper"
 s = "scissors"
     
-
+#Checks if inputed values (player choice) is valid
 def validRPS(playerChoice):
     if playerChoice.lower() == r or playerChoice.lower() == p or playerChoice.lower() == s:
         return True;
     else:
         return False;
 
+#The actual choosing of the "winner" of the game
 def whoWinsRPS(p1, p2):
     p1 = p1.lower()
     p2 = p2.lower()
@@ -17,20 +18,18 @@ def whoWinsRPS(p1, p2):
     if p1 == p2:
         return "Players Draw!"
 
-    if p1 == r:
-        if p2 == s:
-            return "Player 1 Wins!"
+    if p1 == r and p2 == s:
+        return "Player 1 Wins!"
 
-    if p1 == p:
-        if p2 == r:
-            return "Player 1 Wins!"
+    if p1 == p and p2 == r:
+        return "Player 1 Wins!"
       
-    if p1 == s:
-        if p2 == p:
-            return "Player 1 Wins!"
+    if p1 == s and p2 == p:
+        return "Player 1 Wins!"
         
     return "Player 2 Wins!"
-
+    
+#Main class should be fairly obvious what it does, sets up and executes other classes
 def main():
     print "*******************************"
     print "Hello! This is a simple game of Rock Paper Scissors!"
