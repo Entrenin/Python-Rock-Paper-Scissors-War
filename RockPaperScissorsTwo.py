@@ -38,5 +38,14 @@ elif p1 == p and p2 == r:
 elif p1 == s and p2 == p:
     print "Player 1 Wins!"
     
+elif p2 == r and p1 == s:
+    print "Player 1 Wins!"
+
+elif p2 == p and p1 == r:
+    print "Player 1 Wins!"
+  
+elif p2 == s and p1 == p:
+    print "Player 1 Wins!"
+
 else:
-    print "Player 2 Wins!"
+    print "No one wins!"
